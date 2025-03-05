@@ -9,7 +9,7 @@ import './Signup.css';
 
 const Signup = () => {
     const [step, setStep] = useState(1);
-    const [finalSteps, setFinalSteps] = useState(true);
+    const [finalSteps, setFinalSteps] = useState(false);
     const nextStep = () => setStep(prev => Math.min(prev + 1, 3));
     const prevStep = () => setStep(prev => Math.max(prev - 1, 1));
     const finalStep = () => setFinalSteps(true);
@@ -25,7 +25,7 @@ const Signup = () => {
                 {step === 2 && <StepTwo nextStep={nextStep} prevStep={prevStep} />}
                 {step === 3 && <StepThree nextStep={finalStep} prevStep={prevStep} />}
                 {/* {step === 4 && <StepFour prevStep={prevStep} />} */}
-                <StepFour />
+          
             </div>
             }
         </Container>

@@ -10,13 +10,13 @@ import { AiOutlineSearch } from "react-icons/ai";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-function DashboardHeader({ toggleSidebar }) {
+function DashboardHeader({ toggleSidebar,isOpen }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <header id="dashboard-header">
+    <header id="dashboard-header" className={`${isOpen ? "open" : ""}`}>
       <nav className="navBar">
         <Container
           className="d-flex justify-content-between align-items-center"

@@ -17,18 +17,16 @@ const MainLayout = ({ children, hideFooter = false, backgroundStyle }) => {
       <div className="app-container" style={backgroundStyle}>
 
          {/* <Header AuthHeader={true} />  */}
-        {!(currentPath === '/login' || currentPath === '/signup') && <DashboardHeader toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />}
+        {!(currentPath === '/login' || currentPath === '/signup') && (<DashboardHeader toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}  isOpen={isSidebarOpen} />)}
+        {(currentPath === '/signup') && (<Header AuthHeader={true} />)}
         {/* {(currentPath === '/login' || currentPath === '/signup') && (
           <>
           </>
-        )}
-        {!(currentPath === '/login' || currentPath === '/signup') && <SideBar isOpen={isSidebarOpen} />} */}
+        )}*/}
+        {!(currentPath === '/login' || currentPath === '/signup') && <SideBar isOpen={isSidebarOpen} />} 
 
-        <SideBar isOpen={isSidebarOpen} />
-        <main
-          // className={`${currentPath === '/login' || currentPath === '/signup' ? '' : 'main-content'} ${isSidebarOpen ? 'open' : ''}`}
-          >
-
+       
+        <main className={`${currentPath === '/login' || currentPath === '/signup' ? '' : 'main-content'} ${isSidebarOpen ? 'open' : ''}`}>
           {children}
         </main>
       </div>
