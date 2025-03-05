@@ -14,6 +14,8 @@ const Input = ({
   inputFieldClass = "",
   inputWrapperClass = "",
   inputContainerClass = "position-relative",
+  rightUnit='',
+  rightUnitClass,
   ...props
 }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -36,6 +38,8 @@ const Input = ({
             {showPassword ? <HiOutlineEye  size={24} /> : <HiOutlineEyeOff size={24} />}
           </span>
         )}
+
+        {rightUnit && <span className={`${rightUnitClass}`}>{rightUnit}</span>}
       </div>
       {error && <p className="input-error-text">{error}</p>}
     </div>

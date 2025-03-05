@@ -12,28 +12,11 @@ const MainLayout = ({ children, hideFooter = false, backgroundStyle }) => {
 
 
   return (
-    <>
-
-      <div className="app-container" style={backgroundStyle}>
-
-        {/* <Header AuthHeader={true} /> */}
-        {!(currentPath === '/login' || currentPath === '/signup') && <DashboardHeader toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />}
-        {/* {(currentPath === '/login' || currentPath === '/signup') && (
-          <>
-          </>
-        )}
-        {!(currentPath === '/login' || currentPath === '/signup') && <SideBar isOpen={isSidebarOpen} />} */}
-
-        <SideBar isOpen={isSidebarOpen} />
-        <main
-          // className={`${currentPath === '/login' || currentPath === '/signup' ? '' : 'main-content'} ${isSidebarOpen ? 'open' : ''}`}
-          >
-
-          {children}
-        </main>
-      </div>
-
-    </>
+    <div className="app-container">
+      {currentPath === '/signup' && <Header />}
+      
+      <main>{children}</main>
+    </div>
   );
 };
 

@@ -61,6 +61,18 @@ h6 { font-size: 16px; }
   font-weight: 600;
 }
 
+.custom-container {
+  max-width: 1576px;
+}
+
+.font-56 {
+  font-size: 56px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .input-field::placeholder {
   color: var(--black);
 }
@@ -192,6 +204,9 @@ a {
   padding-left: 12px;
 }
 
+.pb-12 {
+  padding-bottom: 12px;
+}
 
 .pt-12  {
   padding-top: 12px;
@@ -292,4 +307,17 @@ outline: none;
 a.navbar-brand img {
   max-width: 110px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
