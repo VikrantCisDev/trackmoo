@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import Button from '../components/ui/Button';
+import Search from '../components/ui/Search';
 
 const StepOne = () => {
   const [subStep, setSubStep] = useState(1);
@@ -15,24 +16,16 @@ const StepOne = () => {
   };
 
   return (
-    <div className='mw-520 mx-auto'>
-      <div className='text-center'>
-        <Form>
-          {subStep === 1 ? (
-            <>
-              one
-            </>
-          ) : (
-            <>
-              two
-            </>
-          )}
-
-          <Button variant="dark" className="w-100" onClick={handleNext}>
-            {subStep === 1 ? 'Next' : ''}
-          </Button>
-        </Form>
-      </div>
+    <div className="main-content dash-SB">
+        csdf
+        <div className="dash-container">
+          <div className="top-bar">
+            <h1>Livestock Marketplace</h1>
+            <div className="top-bar-right">
+              <Search/>
+            </div>
+          </div>
+        </div>
     </div>
   );
 };
