@@ -9,6 +9,7 @@ const MainLayout = ({ children }) => {
   return (
     <div className="app-container">
       {currentPath === '/signup' && <Header />}
+      
       <main>{children}</main>
     </div>
   );

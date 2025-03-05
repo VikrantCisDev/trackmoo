@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 
 const Stepper = ({ step }) => {
-    const steps = ["1. Basic Information", "2. Livestock Information", "3. Subscription plan", "4. Marketplace Integration"];
+    const steps = ["1. Basic Information", "2. OTP", "3. Livestock Information"];
     
     return (
         <div className="stepper-container">

@@ -9,18 +9,25 @@ import './Signup.css';
 
 const Signup = () => {
     const [step, setStep] = useState(1);
-    const nextStep = () => setStep(prev => Math.min(prev + 1, 4));
+    const [finalSteps, setFinalSteps] = useState(true);
+    const nextStep = () => setStep(prev => Math.min(prev + 1, 3));
     const prevStep = () => setStep(prev => Math.max(prev - 1, 1));
+    const finalStep = () => setFinalSteps(true);
 
     return (
-        <Container>
+        <Container className='custom-container'>
+            {finalSteps ? (<>
+                <StepFour />
+            </>) : 
             <div className="step-form">
                 <Stepper step={step} />
                 {step === 1 && <StepOne nextStep={nextStep} prevStep={prevStep} />}
                 {step === 2 && <StepTwo nextStep={nextStep} prevStep={prevStep} />}
-                {step === 3 && <StepThree nextStep={nextStep} prevStep={prevStep} />}
-                {step === 4 && <StepFour prevStep={prevStep} />}
+                {step === 3 && <StepThree nextStep={finalStep} prevStep={prevStep} />}
+                {/* {step === 4 && <StepFour prevStep={prevStep} />} */}
+                <StepFour />
             </div>
+            }
         </Container>
     );
 };
