@@ -284,3 +284,11 @@ button.searchModalBtn {
 /* ========================================= */
 /* ============== RESPONSIVE STYLES ============ */
 /* ========================================= */
+
+
+.main-content {
+    margin-left: 0;
+    overflow: auto;
+    transition: all 0.5s;
+    padding: 24px 40px;
+}
