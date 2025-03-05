@@ -197,6 +197,16 @@ button.searchModalBtn {
     width: 100%;
 }
 
+.custom-dropdown button{
+    background: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 
 
 /* ========================================= */
@@ -224,6 +234,27 @@ button.searchModalBtn {
     align-items: center;
 }
 
+.top-bar-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    max-width: 800px;
+    gap: 20px;
+}
+.top-bar-right>div{
+    height: 40px;
+}
+.top-bar-right .dash-sellBtn{
+    padding: 6px 12px;
+    height: 40px;
+    min-height: 40px;
+    max-width: 200px;
+}
+.top-bar-right .dash-sellBtn span{
+    display: flex;
+    align-items: center;
+}
 
 .font-14 {
     font-size: 14px;
