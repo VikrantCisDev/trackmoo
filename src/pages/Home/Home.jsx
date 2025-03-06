@@ -9,6 +9,7 @@ import Search from '../../components/ui/Search';
 import { IoMdAdd } from "react-icons/io";
 import CustomDropdown from '../../components/ui/Dropdown';
 import { IoFilterOutline } from "react-icons/io5";
+import CustomPagination from "../../components/ui/Pagination";
 
 const Home = () => {
   const cardData = [
@@ -18,6 +19,9 @@ const Home = () => {
       title: "Cattle",
       subTitle: "Bob Mould is celebrating the new year ",
       features: [],
+      cardBtn: "Buy",
+      price: "$22000",
+      grade: "A Grade"
     },
     {
       id: 2,
@@ -25,6 +29,9 @@ const Home = () => {
       title: "Goat",
       subTitle: "Bob Mould is celebrating the new year ",
       features: [],
+      cardBtn: "Buy",
+      price: "$22000",
+      grade: "A Grade"
     },
     {
       id: 3,
@@ -32,6 +39,9 @@ const Home = () => {
       title: "Sheep",
       subTitle: "Bob Mould is celebrating the new year ",
       features: [],
+      cardBtn: "Buy",
+      price: "$22000",
+      grade: "A Grade"
     },
     {
       id: 4,
@@ -39,6 +49,9 @@ const Home = () => {
       title: "Sheep",
       subTitle: "Bob Mould is celebrating the new year ",
       features: [],
+      cardBtn: "Buy",
+      price: "$22000",
+      grade: "A Grade"
     },
   ];
   const filter = ["action","action2","action3"]
@@ -48,7 +61,7 @@ const Home = () => {
     <div className="px-64">
       <div className="dash-container">
         <div className="top-bar mb-20">
-          <h1>Livestock Marketplace</h1>
+          <h2>Livestock Marketplace</h2>
           <div className="top-bar-right">
             <Search />
             <CustomDropdown options={filter} className="filter">
@@ -66,10 +79,16 @@ const Home = () => {
               key={item.id}
               cardImg={item.image}
               title={item.title}
+              grade={item.grade}
               subTitle={item.subTitle}
               features={item.features}
+              cardBtn={item.cardBtn}
+              price={item.price}
             />
           ))}
+        </div>
+        <div className="paginationWrapper mt-4">
+          <CustomPagination/>
         </div>
       </div>
     </div>
