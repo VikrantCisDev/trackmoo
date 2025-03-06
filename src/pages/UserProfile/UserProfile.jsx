@@ -2,7 +2,7 @@ import React from 'react'
 import UserProfileSec from '../../components/UserProfile/UserProfileSec'
 import profileImg from '../../assets/images/profileImg.png'
 import './UserProfile.css'
-import Input from '../../components/ui/input'
+import Input from '../../components/ui/Input'
 
 const UserProfile = () => {
     return (
