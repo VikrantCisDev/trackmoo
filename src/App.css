@@ -219,9 +219,10 @@ button.searchModalBtn {
 
 /* dashboard pagess  */
 
-/* .main-content.dash-SB{
-    background-color: #fafafa;
-  } */
+.main-content.dash-SB{
+    /* background-color: #fafafa; */
+    overflow: unset;
+  }
 .dash-container {
     background: var(--white);
     padding: 32px 40px;
@@ -255,7 +256,14 @@ button.searchModalBtn {
     display: flex;
     align-items: center;
 }
-
+.custom-dropdown button#dropdownCustom:hover,
+.custom-dropdown button#dropdownCustom:focus-visible,
+.custom-dropdown button#dropdownCustom:active {
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    box-shadow: none;
+}
 .font-14 {
     font-size: 14px;
 }

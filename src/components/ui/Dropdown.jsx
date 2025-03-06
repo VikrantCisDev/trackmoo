@@ -4,7 +4,7 @@ import React from 'react';
 function CustomDropdown({ options = [], children }) {
   return (
     <Dropdown className='custom-dropdown'>
-      <Dropdown.Toggle variant='success' id='dropdown-basic'>
+      <Dropdown.Toggle id='dropdownCustom'>
         {children}
       </Dropdown.Toggle>
 
