@@ -28,7 +28,7 @@ const CommonCard = ({
         <div className={cardWrapper}>
             {cardImg && (
                 <div className={imgWrapper}>
-                    <Image src={cardImg} alt={alt} className={imgClass} />
+                    <Image src={cardImg} alt={alt} className={`${imgClass} rounded w-100`} />
                     {children && <span className={imgTag}>{children}</span>}
                 </div>
             )}

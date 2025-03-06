@@ -257,6 +257,7 @@ button.searchModalBtn {
     align-items: center;
 }
 .custom-dropdown button#dropdownCustom:hover,
+.custom-dropdown button#dropdownCustom.show,
 .custom-dropdown button#dropdownCustom:focus-visible,
 .custom-dropdown button#dropdownCustom:active {
     background-color: inherit;
@@ -267,7 +268,11 @@ button.searchModalBtn {
 .font-14 {
     font-size: 14px;
 }
-
+.cardOuter{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 24px;
+}
 
 
 
@@ -280,13 +285,9 @@ button.searchModalBtn {
 
 @media (max-width: 991px) {}
 
-
-
 @media (max-width: 767px) {}
 
-
 @media (max-width: 575px) {}
-
 
 
 /* ========================================= */
