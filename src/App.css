@@ -293,6 +293,12 @@ button.searchModalBtn {
     gap: 10px;
     justify-content: center;
 }
+.custom-pagination .page-item a.page-link {
+    border-radius: 3px;
+    background-color: transparent;
+    color: #1D1D1D;
+}
+
 
 
 

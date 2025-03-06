@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import loginBg from '../../assets/images/loginBg.jpg';
 import Logo from '../../assets/images/logo.svg'
-import Input from '../../components/ui/input';
+import Input from '../../components/ui/Input';
 import mail from '../../assets/images/mail.svg'
 import eyesClose from '../../assets/images/eyesClose.svg'
 import googleStore from '../../assets/images/google-store.svg'
