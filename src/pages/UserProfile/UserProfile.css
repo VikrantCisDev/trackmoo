@@ -1,0 +1,21 @@
+.imgtxtWrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profileBtnWrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.userProfileSec {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 16px;
+}
+
+.titleClass {
+    margin-bottom: 10px;
+}
