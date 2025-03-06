@@ -298,7 +298,7 @@ button.searchModalBtn {
     background-color: transparent;
     color: #1D1D1D;
 }
-
+.custom-pagination .page-item a.page-link
 
 
 
@@ -306,13 +306,13 @@ button.searchModalBtn {
 /* ============== RESPONSIVE STYLES ============ */
 /* ========================================= */
 
-@media (max-width: 1199px) {}
+/* @media (max-width: 1199px) {}
 
 @media (max-width: 991px) {}
 
 @media (max-width: 767px) {}
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {} */
 
 
 /* ========================================= */
