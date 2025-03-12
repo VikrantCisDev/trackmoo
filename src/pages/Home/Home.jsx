@@ -12,6 +12,7 @@ import CustomDropdown from '../../components/ui/Dropdown';
 import { IoFilterOutline } from "react-icons/io5";
 import CustomPagination from "../../components/ui/Pagination";
 import { GoVerified } from "react-icons/go";
+import CustomBreadcrumb from "../../components/ui/Breadcrumb";
 
 
 const Home = () => {
@@ -203,6 +204,7 @@ const Home = () => {
 
   return (
     <div className="px-64">
+      <CustomBreadcrumb active={"Livestock Marketplace"}/>
       <div className="dash-container">
         <div className="top-bar mb-20">
           <h2>Livestock Marketplace</h2>

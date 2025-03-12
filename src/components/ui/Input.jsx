@@ -5,6 +5,7 @@ import { HiOutlineEyeOff } from "react-icons/hi";
 
 const Input = ({
   label,
+  id,
   error,
   iconLeft,
   iconRight,

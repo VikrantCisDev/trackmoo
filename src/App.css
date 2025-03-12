@@ -1,4 +1,7 @@
 /* new css  */
+.grey-clr{
+    color: #3D3D3D;
+}
 
 .main-content {
     margin-left: 0;
@@ -343,4 +346,96 @@ button.searchModalBtn {
     position: absolute;
     top: 0;
     left: 0;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "›";
+    font-size: 26px;
+    line-height: 0.7;
+}
+.breadcrumb-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.delete-btn {
+    border: 1px solid #FF3B30;
+    color: #FF3B30;
+    padding: 12px 24px;
+    background: transparent;
+}
+.delete-btn:hover{
+    background-color:  #FF3B30;
+}
+button svg {
+    margin-top: -3px;
+}
+.detailSec {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 16px;
+}
+.plan-comp{
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+.upload-btn {
+    color: #000;
+    border: 1px solid #D1EDC5;
+    background-color: #F5FBF2;
+}
+.upload-btn svg{
+    color: #23C55E;
+}
+.editIcon svg{
+    color: #23C55E;
+}
+.editIcon {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.upload-btn:hover svg{
+    color: #fff;
+}
+.sec-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail-form .input-label{
+    margin-bottom: 6px;
+    color: #888888;
+}
+.detail-form .form-input{
+    background: transparent;
+    width: 100%;
+    color: #000;
+}
+.detail-form .form-input::placeholder{
+    color: #000;
+}
+.form-input,
+.form-input:focus,
+.form-input:focus-visible{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+input[type="date"].form-input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.formInpWrapper{
+   background: #F6F6F6;
+   border-radius: 16px;
+   padding: 33px 24px;
+}
+.formBtm-btns{
+    min-width: 180px;
+    text-align: center;
 }
