@@ -9,7 +9,7 @@ const CommonCard = ({
   alt = "Card Image",
   imgClass = "img-class",
   imgTag = "img-tag",
-  children,
+  tag,
   cardBody = "card-body",
   gradeClass = "grade-class",
   grade = "",
@@ -25,7 +25,7 @@ const CommonCard = ({
   cardBtn = "",
 }) => {
   return (
-    <div className={cardWrapper}>
+    <div className={`${cardWrapper} position-relative`}>
       {cardImg && (
         <div className={`${imgWrapper} mb-3`}>
           <Image
@@ -33,7 +33,9 @@ const CommonCard = ({
             alt={alt}
             className={`${imgClass} rounded w-100`}
           />
-          {children && <span className={imgTag}>{children}</span>}
+          {tag && <div className={`img-tag  ${tag.type === 1 ? "greenTag":""} `}>
+            <img src={tag.img} alt={tag.title} />{tag.title}
+          </div>}
         </div>
       )}
 
@@ -47,13 +49,21 @@ const CommonCard = ({
           </h5>
         )}
         {subTitle && <p className={`${subTitleClass} mb-1`}>{subTitle}</p>}
-        {features &&
-          features.map((item,key) => {
-            return <p className={`${featuresClass} mb-1`} key={key}>{item}</p>
-          })}
+        {features && <div className="featured font-14">
+          {features.map((feature, index) => (
+            feature.type === "text" ? (
+              <p key={index} className={`${featuresClass} mb-1`}>{feature.content}</p>
+            ) : (
+              <p key={index} className={`${featuresClass} mb-1`}>
+                <strong>{feature.label}:</strong> {feature.value} 
+              </p>
+            )
+          ))}
+          </div>
+          }
         {price && <h4 className={`${priceClass} mb-1 cardPrice`}>{price}</h4>}
         {cardBtn && (
-          <Button className={`${cardBtnClass} w-100`}>{cardBtn}</Button>
+          <Button className={`${cardBtnClass} w-100 mt-3`}>{cardBtn}</Button>
         )}
       </div>
     </div>

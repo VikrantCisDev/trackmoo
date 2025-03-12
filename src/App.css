@@ -270,7 +270,7 @@ button.searchModalBtn {
 }
 .cardOuter{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     grid-gap: 24px;
 }
 .cardGrade{
@@ -293,12 +293,19 @@ button.searchModalBtn {
     gap: 10px;
     justify-content: center;
 }
-.custom-pagination .page-item a.page-link {
+.custom-pagination .page-item .page-link {
     border-radius: 3px;
     background-color: transparent;
     color: #1D1D1D;
 }
-.custom-pagination .page-item a.page-link
+.custom-pagination .page-item .page-link:focus{
+    box-shadow: none;
+}
+.custom-pagination .page-item.active>.page-link{
+    background-color: inherit;
+    border-color: var(--green-600);
+    color: var(--green-600);
+}
 
 
 
@@ -325,4 +332,15 @@ button.searchModalBtn {
     overflow: auto;
     transition: all 0.5s;
     padding: 24px 40px;
+}
+.greenTag{
+    background: var(--green-600);
+}
+.img-tag {
+    color: #fff;
+    padding: 7px 9px;
+    border-radius: 8px 0 8px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
